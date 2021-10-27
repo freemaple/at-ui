@@ -3,7 +3,7 @@
   "version": "1.3.3",
   "description": "A UI Component Library with Vue.js",
   "homepage": "https://at.aotu.io",
-  "main": "dist/at.main.js",
+  "main": "dist/at.js",
   "engines": {
     "node": ">=6"
   },
