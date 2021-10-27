@@ -12862,9 +12862,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
           column.sortType && _vm.handleSort(index)
         }
       }
-    }, [_c('span', {
-      attrs: {
-        "v-html": column.title
+    }, [_c('div', {
+      domProps: {
+        "innerHTML": _vm._s(column.title)
       }
     }), _vm._v(" "), (column.sortType) ? [_c('div', {
       staticClass: "at-table__column-sorter",
@@ -12933,9 +12933,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
           column.sortType && _vm.handleSort(index)
         }
       }
-    }, [_c('span', {
-      attrs: {
-        "v-html": column.title
+    }, [_c('div', {
+      domProps: {
+        "innerHTML": _vm._s(column.title)
       }
     }), _vm._v(" "), (column.sortType) ? [_c('div', {
       staticClass: "at-table__column-sorter",
