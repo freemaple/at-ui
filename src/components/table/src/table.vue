@@ -225,6 +225,7 @@ export default {
     },
     allData () {
       this.total = this.allData.length
+      this.objData = this.makeObjData() // 增加该段代码
     },
     sortData () {
       this.handleResize()
