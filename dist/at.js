@@ -12857,16 +12857,15 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       style: ({
         cursor: column.sortType ? 'pointer' : 'text'
       }),
+      domProps: {
+        "innerHTML": _vm._s(column.title)
+      },
       on: {
         "click": function($event) {
           column.sortType && _vm.handleSort(index)
         }
       }
-    }, [_c('span', {
-      attrs: {
-        "v-html": column.title
-      }
-    }), _vm._v(" "), (column.sortType) ? [_c('div', {
+    }, [(column.sortType) ? [_c('div', {
       staticClass: "at-table__column-sorter",
       class: {
         'sort-asc': column._sortType === 'asc',
@@ -12928,16 +12927,15 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       style: ({
         cursor: column.sortType ? 'pointer' : 'text'
       }),
+      domProps: {
+        "innerHTML": _vm._s(column.title)
+      },
       on: {
         "click": function($event) {
           column.sortType && _vm.handleSort(index)
         }
       }
-    }, [_c('span', {
-      attrs: {
-        "v-html": column.title
-      }
-    }), _vm._v(" "), (column.sortType) ? [_c('div', {
+    }, [(column.sortType) ? [_c('div', {
       staticClass: "at-table__column-sorter",
       class: {
         'sort-asc': column._sortType === 'asc',
