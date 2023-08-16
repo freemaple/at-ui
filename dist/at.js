@@ -11394,8 +11394,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "icon at-message__icon",
     class: _vm.iconClass
   }), _vm._v(" "), _c('span', {
-    staticClass: "at-message__content"
-  }, [_vm._v(_vm._s(_vm.message))])])])], 1)
+    staticClass: "at-message__content",
+    domProps: {
+      "innerHTML": _vm._s(_vm.message)
+    }
+  })])])], 1)
   var _obj;
 },staticRenderFns: []}
 
@@ -12572,7 +12575,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }) : _vm._e(), _vm._v(" "), (_vm.message) ? _c('p', {
     staticClass: "at-notification__message",
     domProps: {
-      "textContent": _vm._s(_vm.message)
+      "innerHTML": _vm._s(_vm.message)
     }
   }) : _vm._e()]), _vm._v(" "), _c('i', {
     directives: [{
