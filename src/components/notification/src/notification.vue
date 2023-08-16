@@ -15,7 +15,7 @@
       <i class="icon at-notification__icon" :class="iconClass" v-if="showIcon"></i>
       <div class="at-notification__content">
         <p class="at-notification__title" v-if="title" v-text="title"></p>
-        <p class="at-notification__message" v-if="message" v-text="message"></p>
+        <p class="at-notification__message" v-if="message" v-html="message"></p>
       </div>
       <i class="icon icon-x at-notification__close" v-show="showClose" @click="handleClose"></i>
     </div>

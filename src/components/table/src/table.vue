@@ -32,8 +32,7 @@
                 :style="{
                   cursor: column.sortType ? 'pointer' : 'text'
                 }"
-                @click="column.sortType && handleSort(index)">
-                <span :v-html="column.title"></span>
+                @click="column.sortType && handleSort(index)" v-html="column.title">
                 <template v-if="column.sortType">
                   <div class="at-table__column-sorter"
                     :class="{
@@ -73,8 +72,7 @@
                 :style="{
                   cursor: column.sortType ? 'pointer' : 'text'
                 }"
-                @click="column.sortType && handleSort(index)">
-                <span :v-html="column.title"></span>
+                @click="column.sortType && handleSort(index)" v-html="column.title">
                 <template v-if="column.sortType">
                   <div class="at-table__column-sorter"
                     :class="{

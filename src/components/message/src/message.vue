@@ -12,7 +12,7 @@
         }"
         v-show="visible">
         <i class="icon at-message__icon" :class="iconClass"></i>
-        <span class="at-message__content">{{ message }}</span>
+        <span class="at-message__content" v-html="message"></span>
       </div>
     </transition>
   </div>
